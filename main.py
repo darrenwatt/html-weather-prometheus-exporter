@@ -14,10 +14,10 @@ url=Config.WEATHER_URL
 logging.info("URL configured is: " + url)
 
 # Create a Prometheus gauge to track the metric
-weatherscraper_temp = Gauge('temp', 'The scraped temperature value in degrees C')
-weatherscraper_dewpoint = Gauge('dewpoint', 'The scraped dewpoint value in degrees C')
-weatherscraper_response_code = Gauge('http_response_code', 'Response code from the http server')
-weatherscraper_scrape_success = Gauge('scrape_success', 'did we scrape ok or not')
+weatherscraper_temp = Gauge('weatherscraper_temp', 'The scraped temperature value in degrees C')
+weatherscraper_dewpoint = Gauge('weatherscraper_dewpoint', 'The scraped dewpoint value in degrees C')
+weatherscraper_response_code = Gauge('weatherscraper_response_code', 'Response code from the http server')
+weatherscraper_scrape_success = Gauge('weatherscraper_scrape_success', 'did we scrape ok or not')
 
 # Function to scrap website
 def getweather(url):
