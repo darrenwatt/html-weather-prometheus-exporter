@@ -9,7 +9,3 @@ class Config(object):
     LOG_LEVEL = os.getenv("LOG_LEVEL") or 'INFO'
     APPNAME = os.getenv("APPNAME") or 'NONE'
     ENV = os.getenv("ENV") or "DEV"
-    LABEL_MEASUREMENT = os.getenv("LABEL_MEASUREMENT")
-    LABEL_TEMP = os.getenv("LABEL_TEMP")
-    LABEL_DEWPOINT = os.getenv("LABEL_DEWPOINT")
-
