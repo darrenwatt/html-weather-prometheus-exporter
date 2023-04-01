@@ -1,0 +1,4 @@
+prometheus_client
+bs4
+python-dotenv
+requests
